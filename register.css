@@ -72,6 +72,10 @@ nav li:first-child{
   display: none;
 }
 
+.mainbar i{
+  margin-right: 10px;
+}
+
 @media screen and (max-width: 800px){
   #hide{
       display: none;

@@ -106,3 +106,7 @@ nav li:first-child{
     font-weight: 500;
     text-justify: auto;
 }
+
+.mainbar i{
+    margin-right: 10px;
+}

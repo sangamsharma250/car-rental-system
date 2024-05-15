@@ -10,9 +10,10 @@
 
 </head>
 <body>
+    <!-- for navbar -->
     <nav>
         <ul class = "mainbar">
-            <li><a href = "index.html" >Car Rental</a></li>   
+            <li><a href = "index.html" ><i class = "fa fa-car"></i>Car Rental</a></li>   
             <li id = "hide"><a href = "index.html" >Home</a></li>   
             <li id = "hide"><a href = "contact.html" >Contact</a></li>   
             <li id = "hide"><a href = "#" >About us</a></li>   
@@ -39,11 +40,12 @@
         <div class="form">
             <h2>Contact Us</h2>
             <h3>Send Us a Message </h3><br>
-            <form></form>
-                <input type = "text" id = "name" name = "name" placeholder="Your name"><br><br>
-                <input type = "email" id = "email" name = "email" placeholder="Your email"><br><br>
-                <input type = "number" id = "phone" name = "phone" placeholder="Your phone number"><br><br>
-                <textarea name = "message" id="message" rows="5" cols = "50" placeholder="Write message"></textarea><br><br>
+
+            <form method = "POST">
+                <input type = "text" id = "name" name = "name" placeholder="Your name" required ><br><br>
+                <input type = "email" id = "email" name = "email" placeholder="Your email" required><br><br>
+                <input type = "number" id = "phone" name = "phone" placeholder="Your phone number" required ><br><br>
+                <textarea name = "message" id="message" rows="5" cols = "50" placeholder="Write message" required ></textarea><br><br>
                 <button type=" submit">Send</button>
             </form>
         </div>
