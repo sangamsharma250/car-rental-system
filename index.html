@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="style.css">
+    
+   
+    <!-- this is for symbols -->
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul class = "mainbar">
+            <li><a href = "index.html" >Car Rental</a></li>   
+            <li id = "hide"><a href = "index.html" >Home</a></li>   
+            <li id = "hide"><a href = "contact.html" >Contact</a></li>   
+            <li id = "hide"><a href = "#" >About us</a></li>   
+            <li id = "hide"><a href = "login.html" >Login</a></li>   
+            <li id = "hide"><a href = "register.html" >Sign up</a></li>   
+            <li id = "menu" onclick = "showSidebar()"><a href = "#"><i class = "fa fa-bars" style="font-size: 20px;"></i></a></li>
+        </ul>
+
+        <!-- for menubar -->
+        <ul class = "sidebar">
+            <li onclick = "hideSidebar()"><a href = "#" ><i class = "fa fa-close" style="font-size: 20px;" ></i></a></li>   
+            <li><a href = "index.html" >Home</a></li>   
+            <li><a href = "contact.html" >Contact</a></li>   
+            <li><a href = "#" >About us</a></li>   
+            <li><a href = "login.html" >Login</a></li>   
+            <li><a href = "register.html" >Sign up</a></li>   
+          
+        </ul>        
+    </nav>
+    <p>
+        LOOKING FOR 
+        <span style="color: orangered;">CARS...</span><br>
+        RENT A CAR IN JUST FEW STEPS...
+    </p>
+
+    <!-- form for home page -->
+    <div class = "book-details">
+        Pickup Location<br>
+        <input type = "search" id="location" name = "location" placeholder="pickup location" required>
+        
+        <input type = "search" id="location" name = "location" placeholder="return location" required><br><br>
+    
+        <div >
+            <input type = "datetime-local" id = "time" name = "time" placeholder="pickup date" required>
+            <input type = "datetime-local" id = "time" name = "time" placeholder="return date" required><br><br>
+        </div>     
+ 
+        <div>
+            <button id = "find-vehicle" name = "find-vehicle">
+                <a href = "#" >
+                    Search Vehicle
+                </a>
+            </button>
+        </div>
+    </div>
+
+    <footer>
+        
+    </footer>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar');     //className: sidebar will appear on click.
+            sidebar.style.display = "flex";                         
+        }
+
+        function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar');     //className: sidebar will close on click.
+            sidebar.style.display = "none";                 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- this is for symbols -->
+</head>
+<body>
+    <nav>
+      <ul class = "mainbar">
+          <li><a href = "index.html" >Car Rental</a></li>   
+          <li id = "hide"><a href = "index.html" >Home</a></li>   
+          <li id = "hide"><a href = "contact.html" >Contact</a></li>   
+          <li id = "hide"><a href = "#" >About us</a></li>   
+          <li id = "hide"><a href = "login.html" >Login</a></li>   
+          <li id = "hide"><a href = "register.html" >Sign up</a></li>   
+          <li id = "menu" onclick = "showSidebar()"><a href = "#"><i class = "fa fa-bars" style="font-size: 20px;"></i></a></li>
+      </ul>
+
+      <!-- for menubar -->
+      <ul class = "sidebar">
+          <li onclick = "hideSidebar()"><a href = "#" ><i class = "fa fa-close" style="font-size: 20px;" ></i></a></li>   
+          <li><a href = "index.html" >Home</a></li>   
+          <li><a href = "contact.html" >Contact</a></li>   
+          <li><a href = "#" >About us</a></li>   
+          <li><a href = "login.html" >Login</a></li>   
+          <li><a href = "register.html" >Sign up</a></li>   
+        
+      </ul>        
+    </nav>
+
+  <!-- login starts -->
+
+  <main>
+    <div class="form">
+        <h1>Log in</h1>
+        <br><br>
+    <form method="POST">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+      
+        <p class="p">
+          <a href = "#">Forgot password?</a>
+        </p>
+                
+        <input type="submit" value="Log in" class="login"> 
+        <br><br>
+
+        <p class="p">
+          <a href="register.html">Create an account</a><br>
+      </p> 
+      
+      
+    </form>
+    
+   
+    </div>
+  </main>
+
+  <script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar');     //className: sidebar will appear on click.
+        sidebar.style.display = "flex";                         
+    }
+
+    function hideSidebar(){
+    const sidebar = document.querySelector('.sidebar');     //className: sidebar will close on click.
+        sidebar.style.display = "none";                 
+    }
+</script>
+</body>
+</html>

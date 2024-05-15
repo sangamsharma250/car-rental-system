@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+    <!-- this is for symbols -->
+
+</head>
+<body>
+    <nav>
+        <ul class = "mainbar">
+            <li><a href = "index.html" >Car Rental</a></li>   
+            <li id = "hide"><a href = "index.html" >Home</a></li>   
+            <li id = "hide"><a href = "contact.html" >Contact</a></li>   
+            <li id = "hide"><a href = "#" >About us</a></li>   
+            <li id = "hide"><a href = "login.html" >Login</a></li>   
+            <li id = "hide"><a href = "register.html" >Sign up</a></li>   
+            <li id = "menu" onclick = "showSidebar()"><a href = "#"><i class = "fa fa-bars" style="font-size: 20px;"></i></a></li>
+        </ul>
+
+        <!-- for menubar -->
+        <ul class = "sidebar">
+            <li onclick = "hideSidebar()"><a href = "#" ><i class = "fa fa-close" style="font-size: 20px;" ></i></a></li>   
+            <li><a href = "#" >Home</a></li>   
+            <li><a href = "contact.html" >Contact</a></li>   
+            <li><a href = "#" >About us</a></li>   
+            <li><a href = "login.html" >Login</a></li>   
+            <li><a href = "register.html" >Sign up</a></li>   
+          
+        </ul>        
+    </nav>
+
+<!-- contact us starts -->
+
+    <section class = "contact">
+        <div class="form">
+            <h2>Contact Us</h2>
+            <h3>Send Us a Message </h3><br>
+            <form></form>
+                <input type = "text" id = "name" name = "name" placeholder="Your name"><br><br>
+                <input type = "email" id = "email" name = "email" placeholder="Your email"><br><br>
+                <input type = "number" id = "phone" name = "phone" placeholder="Your phone number"><br><br>
+                <textarea name = "message" id="message" rows="5" cols = "50" placeholder="Write message"></textarea><br><br>
+                <button type=" submit">Send</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p><i class="fas fa-phone"></i>9823012312</p>
+            <p><i class = "fas fa-envelope"></i>abc123@gmail.com</p>
+            <p><i class = "fas fa-map-marker-alt"></i>Biratnagar, Nepal</p>
+        </div>
+
+    </section>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar');     //className: sidebar will appear on click.
+            sidebar.style.display = "flex";                         
+        }
+
+        function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar');     //className: sidebar will close on click.
+            sidebar.style.display = "none";                 
+        }
+    </script>
+</body>
+</html>
