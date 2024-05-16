@@ -35,21 +35,22 @@
 
 <!-- register starts -->
   <main>
-    <div class="formregister">
+    <div class="form-register">
         <h1>Register</h1>
+
             <form action="submit.php" method="post">
-              <br>
-              <label for="photo">Photo:</label>
-              <input type="file" id="photo" name="photo">
-              <br>
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name">
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
-                <br>
-                <label for="gender">Gender:</label>
-                <div >
+
+              <!-- <label for="photo">Photo</label> -->
+              <input type="file" id="photo" name="photo" placeholder="Profile Photo"><br>
+              
+              <!-- <label for="name">Name</label> -->
+              <input type="text" name="name" id="name" placeholder="Full Name"><br>
+              
+              <!-- <label for="email">Email</label> -->
+              <input type="email" name="email" id="email" placeholder="Email"><br><br>
+              
+              <label for="gender">Gender:</label>
+                <div>
                     Male
                     <input type="radio" name="gender" value="male" id="male">
                     Female
@@ -63,19 +64,19 @@
                   <option value="other">Other</option>
                </select> -->
                 <br>
-                <label for="date_of_birth">Date of Birth:</label>
-                <input type="date" id="date_of_birth" name="date_of_birth">
-                <br>
-                <label for="contact_number">Contact Number:</label>
-                <input type="number" id="contact_number" name="contact_number">
-                <br>
-                <label for="password">Password:</label>
-                <input type="password" name="password" id="password">
-                <br>
-                <label for="confirm_password">Confirm Password:</label>
-                <input type="password" name="confirm_password" id="confirm_password">
-                <br>
-                <input type="submit" value="Register">
+              <!-- <label for="date_of_birth">Date of Birth</label> -->
+              <input type="date" id="date_of_birth" name="date_of_birth"> <br>
+              
+              <!-- <label for="contact_number">Contact Number</label> -->
+              <input type="number" id="contact_number" name="contact_number" placeholder="Contact Number"> <br>
+              
+              <!-- <label for="password">Password</label> -->
+              <input type="password" name="password" id="password" placeholder="Password"> <br>
+              
+              <!-- <label for="confirm_password">Confirm Password</label> -->
+              <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password"><br><br>
+              
+              <input type="submit" value="Register">
            </form>
     </div>
   </main>
